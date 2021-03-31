@@ -70,11 +70,13 @@
     font-family: 'Righteous', cursive;
     font-size: 26px;
     padding-bottom: 17px;
+    color: #333;
 }
 
 .category {
     padding-top: 27px;
     padding-left: 19px;
+    padding-bottom: 10px;
 }
 
 .card {
