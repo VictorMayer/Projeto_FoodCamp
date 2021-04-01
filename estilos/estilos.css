@@ -10,6 +10,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 .topo>div {
@@ -52,7 +53,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    margin: 15px 25px 25px 25px;
+    margin: 15px 25px 20px 25px;
     padding: 6px 30px;
     border-radius: 50px;
     background: #cbcbcb;
@@ -76,7 +77,16 @@
 .category {
     padding-top: 27px;
     padding-left: 19px;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
+}
+
+.cards-container {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
 }
 
 .card {
@@ -84,6 +94,8 @@
     height: 216px;
     background: #fff;
     border-radius: 9px;
+    margin-right: 16px;
+    position: relative;
 }
 
 .card img {
@@ -119,4 +131,20 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
+    position: absolute;
+    bottom: 14px;
+}
+
+.fade {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.75);
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+
+.escondido {
+    display: none;
 }
