@@ -98,6 +98,10 @@
     position: relative;
 }
 
+.card ion-icon {
+    color: #fff;
+}
+
 .card img {
     width: 144px;
     height: 87px;
@@ -138,13 +142,103 @@
 .fade {
     width: 100vw;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.90);
     position: fixed;
     z-index: 10;
     left: 0;
     top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.escondido {
+.hidden {
     display: none;
+}
+
+.confirmar {
+    margin: 0px 19px;
+    width: 377px;
+    height: 353px;
+    background: #50d074;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 9px;
+    flex-direction: column;
+}
+
+.confirmar>p:first-child {
+    color: #fff;
+    margin-top: 24px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.confirmar>p:last-child {
+    color: #fff;
+    margin-top: 24px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.cart-item {
+    padding: 0px 26px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.total {
+    font-weight: bold;
+    letter-spacing: 0.018em;
+    margin-bottom: 24px;
+}
+
+.confirmar>button {
+    width: 333px;
+    height: 52px;
+    background: #fff;
+    color: #50d074;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.018em;
+    border-radius: 100px;
+    border-style: none;
+    outline-offset: none;
+}
+
+.confirmar>button:last-child {
+    width: 333px;
+    height: 52px;
+    background: #50d074;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.018em;
+    border-style: none;
+    outline-offset: none;
+    margin-bottom: 4px;
+}
+
+.selected {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+
+.selected ion-icon {
+    position: absolute;
+    bottom: 12px;
+    right: 14px;
+    color: #32B72F;
+    font-size: 22px;
 }

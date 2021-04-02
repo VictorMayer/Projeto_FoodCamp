@@ -28,7 +28,7 @@
 
             <div class="cards-container scroll-hidden">
 
-                <div class="card">
+                <div class="card 1" onclick="clicked(1)">
 
                     <img src="https://mercadoeconsumo.com.br/wp-content/uploads/2019/04/Que-comida-saud%C3%A1vel-que-nada-brasileiro-gosta-de-fast-food.jpg">
 
@@ -43,9 +43,12 @@
                     <div class="price">
                         <p>R$ 14,90</p>
                     </div>
+
+                    <ion-icon name="checkmark-circle"></ion-icon>
+
                 </div>
 
-                <div class="card">
+                <div class="card 1" onclick="clicked(1)">
 
                     <img src="https://mercadoeconsumo.com.br/wp-content/uploads/2019/04/Que-comida-saud%C3%A1vel-que-nada-brasileiro-gosta-de-fast-food.jpg">
 
@@ -60,9 +63,12 @@
                     <div class="price">
                         <p>R$ 14,90</p>
                     </div>
+
+                    <ion-icon name="checkmark-circle"></ion-icon>
+
                 </div>
 
-                <div class="card">
+                <div class="card 1" onclick="clicked(1)">
 
                     <img src="https://mercadoeconsumo.com.br/wp-content/uploads/2019/04/Que-comida-saud%C3%A1vel-que-nada-brasileiro-gosta-de-fast-food.jpg">
 
@@ -77,9 +83,12 @@
                     <div class="price">
                         <p>R$ 14,90</p>
                     </div>
+
+                    <ion-icon name="checkmark-circle"></ion-icon>
+
                 </div>
 
-                <div class="card">
+                <div class="card 1" onclick="clicked(1)">
 
                     <img src="https://mercadoeconsumo.com.br/wp-content/uploads/2019/04/Que-comida-saud%C3%A1vel-que-nada-brasileiro-gosta-de-fast-food.jpg">
 
@@ -95,6 +104,27 @@
                         <p>R$ 14,90</p>
                     </div>
 
+                    <ion-icon name="checkmark-circle"></ion-icon>
+
+                </div>
+
+                <div class="card 1" onclick="clicked(1)">
+
+                    <img src="https://mercadoeconsumo.com.br/wp-content/uploads/2019/04/Que-comida-saud%C3%A1vel-que-nada-brasileiro-gosta-de-fast-food.jpg">
+
+                    <div class="item-title">
+                        <p>Frango Yin Yang</p>
+                    </div>
+
+                    <div class="description">
+                        <p>Um pouco de batata, um pouco de salada</p>
+                    </div>
+
+                    <div class="price">
+                        <p>R$ 14,90</p>
+                    </div>
+
+                    <ion-icon name="checkmark-circle"></ion-icon>
 
                 </div>
 
@@ -108,7 +138,7 @@
 
             <div class="cards-container scroll-hidden">
 
-                <div class="card">
+                <div class="card 2">
 
                     <img src="https://s2.glbimg.com/GUda5oj9xkd_yQNyn36mDn9XJmo=/620x455/e.glbimg.com/og/ed/f/original/2018/08/17/beber-refrigerante-todos-os-dias-esta-te-matando.jpg">
 
@@ -188,7 +218,7 @@
             <p>Por fim, sua sobremesa</p>
 
             <div class="cards-container scroll-hidden">
-                <div class="card">
+                <div class="card 3">
 
                     <img src="https://img.itdg.com.br/tdg/images/recipes/000/031/593/318825/318825_original.jpg?mode=crop&width=710&height=400">
 
@@ -246,14 +276,36 @@
         </div>
     </div>
     <div class="concluir-pedido">
-        <button class="send" type="submit">Selecione todos os itens<br> para fechar o pedido</button>
+        <button onclick="confirmarPedido()" class="send" type="submit">Selecione todos os itens<br> para fechar o pedido</button>
     </div>
 
-    <div class="fade escondido">
+    <div class="fade hidden">
         <div class="confirmar">
+            <p>Confirme seu pedido</p>
+            <span class="cart-item">
+                <p>itens</p>
+                <p>preço</p>
+            </span>
+            <span class="cart-item">
+                <p>itens</p>
+                <p>preço</p>
+            </span>
+            <span class="cart-item">
+                <p>itens</p>
+                <p>preço</p>
+            </span>
 
+            <span class="cart-item total">
+                <p>TOTAL</p>
+                <p>R$ 27,70</p>
+            </span>
+            <button type="button">Tudo certo, pode pedir!</button>
+            <button type="button" onclick="cancelar()">Cancelar</button>
         </div>
     </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 
 </html>
