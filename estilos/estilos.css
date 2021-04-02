@@ -59,6 +59,10 @@
     background: #cbcbcb;
 }
 
+.habilitado button {
+    background: #32B72F;
+}
+
 .conteudo {
     margin: 92px 0px;
     width: 100%;
