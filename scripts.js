@@ -21,7 +21,7 @@ function clicked(category, card) {
     const card_toString = "." + category + card;
     let price_number = parseFloat(document.querySelector(card_toString + " .price .hidden").innerHTML);
     let price_string = document.querySelector(card_toString + " .price p:first-child").innerHTML;
-    let item_title = document.querySelector(card_toString + " .item-title").innerHTML;
+    let item_title = document.querySelector(card_toString + " .item-title p").innerHTML;
     //seleciona a categoria
     for (let index = 0; index < category_array.length; index++) {
         if (category_array[index] === category) {
