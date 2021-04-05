@@ -90,6 +90,7 @@ function confirmarPedido() {
 }
 
 function cancelar() {
+    total = 0;
     console.log("botao está sendo clicado");
     const elemento = document.querySelector(".fade");
     elemento.classList.add("hidden");
