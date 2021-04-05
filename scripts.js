@@ -98,7 +98,7 @@ function cancelar() {
 
 function enviar() {
     const name = prompt("Digite seu nome: ");
-    const adress = prompt("Ok, agora conte-nos, para devemos entregar seu pedido?           Endereço: ");
+    const adress = prompt("Ok, agora conte-nos, para devemos entregar seu pedido?\n Endereço: ");
     const prato = document.querySelector(".food-title").innerHTML;
     const bebida = document.querySelector(".drink-title").innerHTML;
     const sobremesa = document.querySelector(".desert-title").innerHTML;
